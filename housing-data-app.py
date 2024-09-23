@@ -23,7 +23,7 @@ income_level = st.sidebar.radio(
     ('Low', 'Medium', 'High')
 )
 
-# 根据选择的收入水平过滤数据框
+
 if income_level == 'Low':
     df = df[df['median_income'] <= 2.5]
 elif income_level == 'Medium':
